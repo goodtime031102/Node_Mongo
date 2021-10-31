@@ -1,0 +1,34 @@
+========================
+= connect to mongo db: =
+========================
+mongosh "mongodb+srv://cluster0.e65tv.mongodb.net/myFirstDatabase" --username goodtime031102
+
+mongosh "mongodb+srv://goodtime031102:ttc001@cluster0.e65tv.mongodb.net/myFirstDatabase"
+
+========================
+= bash test commands   =
+========================
+curl -X POST \
+    -H 'content-type:application/json' \
+    -d '{"firstname":"John","lastname":"Doe"}' \
+    http://localhost:5000/personnel
+
+
+curl -X GET http://localhost:5000/personnel
+
+curl -X GET http://localhost:5000/personnel/4b103f89403f841059524fd1
+
+curl -X DELETE http://localhost:5000/personnel/617da0ab7e33a5b02b81f5d7
+
+/// not working 
+curl -X PATCH http://localhost:5000/personnel/617da95737a6de08552fca5e --data '{"firstName":"ryan", "lastName":"hu", "age": 8, "gender":"M"}'
+
+curl -X PUT http://localhost:5000/personnel/617d9fb476b607a7a7cffdcc --data '{"firstName":"ryan", "lastName":"hu", "age": 8, "gender":"M"}'
+
+
+========================
+= start api server    =
+========================
+npm start
+node app.js
+nodemon app.js
