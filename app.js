@@ -18,7 +18,7 @@ app.use(BodyParser.urlencoded({ extended: true }));
 
 //app.listen(PORT, () =>console.log(`Server Running on port: http://localhost:${PORT}`));
 
-//test to Github   - change comment to fix branch
+//test to Github
 
 var database, collection;
 
