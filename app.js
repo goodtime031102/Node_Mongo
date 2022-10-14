@@ -6,6 +6,8 @@ const ObjectId = require("mongodb").ObjectID;
 //const CONNECTION_URL = "mongodb://localhost:27017/";
 //const DATABASE_NAME = "tdbank";
 
+// good branch - initial commit
+
 const CONNECTION_URL = "mongodb+srv://goodtime031102:ttc001@cluster0.e65tv.mongodb.net";
 const DATABASE_NAME = "myFirstDatabase";
 
